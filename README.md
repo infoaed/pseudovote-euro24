@@ -2,6 +2,8 @@
 
 Hääletustunnuste jagaja on eeldab vaikimisi viimase Ubuntut või Debiani kasutamist. Tegu on eksperimendiga e-hääletuse lävepakuküsitluse korraldamiseks Euroopa Parlamendi valimistel ning tseremoonia peamine eesmärk on tagada lävepakuküsitluse korrapärane toimumine [vastavalt algselt seatud eesmärgile](https://exitpoll.infoaed.ee/). Kuigi küsitlusele ei kehti samad nõuded, mis valimistele, siiski püütakse tagada samade või sarnaste põhimõtete järgimist, mida peab järgima valimiste korraldamisel.
 
+Kui vaatejad tahavad tutvuda lähtefailidega ses osas, mis potentsiaalselt sisaldavad isikuandmeid, nt uurida lähemalt valijate nimekirja või sertifikaate, siis peavad nad tegema seda enda seadmetes. Kui vaatlejad tahavad millegagi tutvuda tseremoonia arvutusmasinas, siis peavad nad tegema seda oma samme selgelt ja valjuhäälselt tutvustades, mille järel võib käske käivitada valimiskomisjoni nõusolekul.
+
 ## 1. Riistvara valik
 
 Hetkel on korraldaja poolt valikus [MSI Bravo 15 C7V](https://www.msi.com/Laptop/Bravo-15-C7VX/) sülearvuti. Viimane Ubuntu läheb sellel tööle ilma eriseadistusi vajamata.
