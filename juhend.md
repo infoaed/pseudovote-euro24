@@ -1,12 +1,12 @@
 # PSEUDONÜÜMITSEREMOONIA
 
-Hääletustunnuste jagaja on eeldab vaikimisi viimase Ubuntut või Debiani kasutamist.
+Hääletustunnuste jagaja on eeldab vaikimisi viimase Ubuntut või Debiani kasutamist. Tegu on eksperimendiga e-hääletuse lävepakuküsitluse korraldamiseks Euroopa Parlamendi valimistel ning tseremoonia peamine eesmärk on tagada lävepakuküsitluse korrapärane toimumine [vastavalt algselt seatud eesmärgile](https://exitpoll.infoaed.ee/). Kuigi küsitlusele ei kehti samad nõuded, mis valimistele, siiski püütakse tagada samade või sarnaste põhimõtete järgimist, mida peab järgima valimiste korraldamisel.
 
-1. Riistvara valik
+## 1. Riistvara valik
 
 Hetkel on korraldaja poolt valikus [MSI Bravo 15 C7V](https://www.msi.com/Laptop/Bravo-15-C7VX/) sülearvuti. Viimane Ubuntu läheb sellel tööle ilma eriseadistusi vajamata.
 
-2. Opsüsteemi valik
+## 2. Opsüsteemi valik
 
 Ilmselt kõlbavad ka viimased Debianid, aga Ubuntut võib olla lihtsam eri riistvarale paigaldada. Viimane Ubuntu on [Ubuntu 24.04 LTS](https://discourse.ubuntu.com/t/ubuntu-24-04-lts-noble-numbat-release-notes/39890) "Noble Numbat". Ubuntu autentsuses veendumiseks genereeritakse vähemalt opsüsteemi tõmmise räsi ja võrreldakse seda [Ubuntu lehel avaldatud allkirjastatud räsiga](http://releases.ubuntu.com/noble/).
 
@@ -21,11 +21,11 @@ gpg --keyid-format long --verify SHA256SUMS.gpg SHA256SUMS
 sha256sum ubuntu-24.04-desktop-amd64.iso
 ```
 
-3. Opsüsteemi paigaldamine
+## 3. Opsüsteemi paigaldamine
 
-Paigaldatakse Ubuntu tavapärasel viisil, määrates juurkasutaja ja parooli.
+Paigaldatakse Ubuntu tavapärasel viisil, määrates juurkasutaja ja parooli. Pärast Ubntu paigaldamist eeldatakse, et ollakse turvalises süsteemis, ühendutakse Internetiga ja tehakse kõike tavapärase Ubuntu kasutamise hea pratkika raames. Kui logitakse Ubuntusse sisse, pannakse esimese asjana käima videosalvestus.
 
-4. Tarkvara paigaldamine
+## 4. Tarkvara paigaldamine
 
 ```
 sudo apt install git
@@ -33,11 +33,11 @@ git clone https://github.com/infoaed/pseudovote-euro24.git
 sudo apt install python3-m2crypto python3-pyasn1 python3-pycryptodome python3-progressbar python3-fpdf
 ```
 
-5. Valijate nimekirja ja sertide paigaldamine
+## 5. Valijate nimekirja ja sertide paigaldamine
 
 Valijate nimekiri on tekstifail `voterlist.txt` ja sertifikaadid on JSON-vormingus failid nimetatud malli järgi `01234567890.json`, mis on kataloogis `res`. Paigaldatakse mälupulgalt, räsid dokumenteeritakse.
 
-6. Pseudonüümide looja käivitamine
+## 6. Pseudonüümide looja käivitamine
 
 Enne pseudonüümide looja käivitamist peab olema olemas kataloog `con`, kuhu paigutatakse krüptitud hääletustunnused.
 
@@ -45,7 +45,7 @@ Enne pseudonüümide looja käivitamist peab olema olemas kataloog `con`, kuhu p
 ./ceremony.py
 ```
 
-Karantineeritud pseudonüümide nimekirja krüptimise faasis sisestatakse järjest isikukoode, kelle ID-kaardi jaoks nimekiri krüptitakse. Nimekiri paigutatakse krüptitud konteinerisse, sj iga järgnev konteiner paigutatakse uue isikukoodi jaoks krüptimisel uude konteinerisse. Nii saab konteinerit avada ainult kõigi adressaatide nõusolekul ja koostöös.
+Pseudonüümide karantiinitud nimekirja krüptimise faasis sisestatakse järjest isikukoode, kelle ID-kaardi jaoks nimekiri krüptitakse. Nimekiri paigutatakse krüptitud konteinerisse, sj iga järgnev konteiner paigutatakse uue isikukoodi jaoks krüptimisel uude konteinerisse. Nii saab konteinerit avada ainult kõigi adressaatide nõusolekul ja koostöös.
 
 Väljundiks on:
 
@@ -53,7 +53,7 @@ Väljundiks on:
 * Pseudonüümide räside nimekiri failis `pseudonüümide_räsid.txt`.
 * Karantineeritud pseudonüümide nimekiri krüptitud failis `karantiin_01234567890.cdoc`.
 
-7. Loodud failide räside dokumenteerimine
+## 7. Loodud failide räside dokumenteerimine
 
 Kõigi loodud failide räsid dokumenteeritakse.
 
@@ -62,9 +62,9 @@ cd con
 ls | xargs sha256sum
 ```
 
-8. Karantiineeritud nimekirja allkirjastamine
+## 8. Karantiinitud nimekirja allkirjastamine
 
-Valimiskomisjoni liikmed allkirjastavad karantineeritud nimekirja koos kokkuleppega seda mitte enne valimiste lõppu avada.
+Valimiskomisjoni liikmed allkirjastavad dokumenteeritud räsid ja pseudonüümide karantineeritud nimekirja koos kokkuleppega seda mitte enne valimiste lõppu avada.
 
 ```
 Käesolevaga lubavad allkirjutanud mitte avada karantineeritud pseudonüümide nimekirja enne hääletusperioodi lõppu. Pseudonüümide nimekiri dekrüptitakse hääletusperioodi lõppedes valimiskomisjoni liikmete ID-kaartidega ühiselt ja avaldatakse.
@@ -72,6 +72,6 @@ Käesolevaga lubavad allkirjutanud mitte avada karantineeritud pseudonüümide n
 
 Pseudonüümide räside nimekirjaga, valijate nimekirjaga ja sertifikaatidega võib tutvuda kohapeal, aga neid eraldi ei avaldata.
 
-9. Valimiskomisjon kinnitab tulemuse
+## 9. Valimiskomisjon kinnitab tulemuse
 
 Hääletusperioodi lõpul loeb valimiskomisjon hääled avalikult teadetetahvlilt kokku ja annab teada tulemuse. Sama võivad teha ka kõik teised soovijad, vaidlused lahendatakse võimalusel koostöös valimiskomisjoniga.
