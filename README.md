@@ -1,4 +1,4 @@
-# Pseudonüümitseremoonia juhis
+# Pseudonüümitseremoonia
 
 Hääletustunnuste jagaja on eeldab vaikimisi viimase Ubuntu või Debiani kasutamist. Tegu on eksperimendiga e-hääletuse lävepakuküsitluse korraldamiseks Euroopa Parlamendi valimistel ning tseremoonia peamine eesmärk on tagada lävepakuküsitluse korrapärane toimumine [vastavalt algselt seatud eesmärgile](https://exitpoll.infoaed.ee/). Kuigi küsitlusele ei kehti samad nõuded, mis valimistele, püütakse siiski tagada samade või sarnaste põhimõtete järgimist, mida peab järgima valimiste korraldamisel.
 
