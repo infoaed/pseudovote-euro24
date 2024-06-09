@@ -1,12 +1,12 @@
-# PSEUDONÜÜMITSEREMOONIA
+# Pseudonüümitseremoonia juhis
 
-Hääletustunnuste jagaja on eeldab vaikimisi viimase Ubuntut või Debiani kasutamist. Tegu on eksperimendiga e-hääletuse lävepakuküsitluse korraldamiseks Euroopa Parlamendi valimistel ning tseremoonia peamine eesmärk on tagada lävepakuküsitluse korrapärane toimumine [vastavalt algselt seatud eesmärgile](https://exitpoll.infoaed.ee/). Kuigi küsitlusele ei kehti samad nõuded, mis valimistele, püütakse siiski tagada samade või sarnaste põhimõtete järgimist, mida peab järgima valimiste korraldamisel.
+Hääletustunnuste jagaja on eeldab vaikimisi viimase Ubuntu või Debiani kasutamist. Tegu on eksperimendiga e-hääletuse lävepakuküsitluse korraldamiseks Euroopa Parlamendi valimistel ning tseremoonia peamine eesmärk on tagada lävepakuküsitluse korrapärane toimumine [vastavalt algselt seatud eesmärgile](https://exitpoll.infoaed.ee/). Kuigi küsitlusele ei kehti samad nõuded, mis valimistele, püütakse siiski tagada samade või sarnaste põhimõtete järgimist, mida peab järgima valimiste korraldamisel.
 
 Kui vaatlejad tahavad tutvuda lähtefailidega ses osas, mis potentsiaalselt sisaldavad isikuandmeid, nt uurida lähemalt valijate nimekirja või sertifikaate, siis peavad nad tegema seda enda seadmetes. Kui vaatlejad tahavad millegagi tutvuda tseremoonia arvutusmasinas, siis peavad nad tegema seda oma samme selgelt ja valjuhäälselt tutvustades, mille järel võib käske käivitada valimiskomisjoni nõusolekul.
 
 ## 1. Riistvara valik
 
-Hetkel on korraldaja poolt valikus [MSI Bravo 15 C7V](https://www.msi.com/Laptop/Bravo-15-C7VX/) sülearvuti. Viimane Ubuntu läheb sellel tööle ilma eriseadistusteta.
+Hetkel on korraldaja poolt valikus [MSI Bravo 15 C7V](https://www.msi.com/Laptop/Bravo-15-C7VX/) sülearvuti. Viimane Ubuntu läheb sellel tööle eriseadistusteta.
 
 ## 2. Opsüsteemi valik
 
@@ -25,7 +25,7 @@ sha256sum ubuntu-24.04-desktop-amd64.iso
 
 ## 3. Opsüsteemi paigaldamine
 
-Paigaldatakse Ubuntu tavapärasel viisil, määrates juurkasutaja ja parooli. Pärast Ubntu paigaldamist eeldatakse, et ollakse turvalises süsteemis, ühendutakse Internetiga ja tehakse kõike tavapärase Ubuntu kasutamise hea pratkika raames. Kui logitakse Ubuntusse sisse, pannakse esimese asjana käima videosalvestus.
+Paigaldatakse Ubuntu tavapärasel viisil, määrates juurkasutaja ja parooli. Pärast Ubuntu paigaldamist eeldatakse, et ollakse turvalises süsteemis, ühendutakse Internetiga ja tehakse kõike tavapärase Ubuntu kasutamise hea praktika raames. Kui logitakse Ubuntusse sisse, pannakse esimese asjana käima videosalvestus.
 
 ## 4. Tarkvara paigaldamine
 
@@ -68,9 +68,7 @@ ls | xargs sha256sum
 
 Valimiskomisjoni liikmed allkirjastavad dokumenteeritud räsid ja pseudonüümide karantiinitud nimekirja koos kokkuleppega seda mitte enne valimiste lõppu avada.
 
-```
-Käesolevaga lubavad allkirjutanud mitte avada karantiinitud pseudonüümide nimekirja enne hääletusperioodi lõppu. Pseudonüümide nimekiri dekrüptitakse hääletusperioodi lõppedes valimiskomisjoni liikmete ID-kaartidega ühiselt ja avaldatakse.
-```
+> "Käesolevaga lubavad allkirjutanud mitte avada karantiinitud pseudonüümide nimekirja enne hääletusperioodi lõppu. Pseudonüümide nimekiri dekrüptitakse hääletusperioodi lõppedes valimiskomisjoni liikmete ID-kaartidega ühiselt ja avaldatakse."
 
 Pseudonüümide räside nimekirjaga, valijate nimekirjaga ja sertifikaatidega võib tutvuda kohapeal, aga neid eraldi ei avaldata.
 
