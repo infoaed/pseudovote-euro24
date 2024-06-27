@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+# wget https://bulletin.pseudovote.net/ -O bulletin.json
 # ./tally.py | tee /dev/tty | pandoc -f markdown -t pdf > results.pdf
 
 import json
